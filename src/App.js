@@ -7,19 +7,15 @@ class App extends React.Component {
   }
 
   plusClick = () => {
-    this.setState((oldState) => {
-      return ({
-        counter: oldState.counter + 1
-      })
-    })
+    this.setState((oldState) => ({
+      counter: oldState.counter + 1
+    }))
   }
 
   minusClick = () => {
-    this.setState((oldState) => {
-      return ({
-        counter: oldState.counter - 1
-      })
-    })
+    this.setState((oldState) => ({
+      counter: oldState.counter - 1
+    }))
   }
 
   render = () => {
